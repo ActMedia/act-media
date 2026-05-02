@@ -1,42 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>ACT MEDIA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACT MEDIA</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ff0066, #6600ff);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+header p {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* SECCIONES */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services {
+  background: #181818;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #2a2a2a;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 15px;
+}
+
+/* CONTACTO */
+.contact {
+  background: linear-gradient(135deg, #6600ff, #ff0066);
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #25D366;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1ebe5d;
+}
+
+footer {
+  background: black;
+  padding: 20px;
+}
+a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+</style>
+
 </head>
 
-<body style="font-family: Arial; margin:0;">
+<body>
 
-  <!-- HEADER -->
-  <header style="background:black; color:white; padding:15px;">
-    <h2>ACT MEDIA</h2>
-  </header>
+<!-- HEADER -->
+<header>
+  <div>
+    <h1>ACT MEDIA</h1>
+    <p>Agencia profesional para modelos webcam</p>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section style="padding:40px;">
-    <h1>Impulsa tu carrera en la industria webcam</h1>
-    <p>Formación, soporte y crecimiento profesional.</p>
-  </section>
+<!-- SERVICIOS -->
+<section class="services">
+  <h2>Servicios</h2>
 
-  <!-- SERVICIOS -->
-  <section style="padding:40px; background:#f5f5f5;">
-    <h2>Servicios</h2>
+  <div class="cards">
 
-    <h3>Marketing</h3>
-    <p>Impulsamos tu visibilidad para aumentar ingresos.</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
+      <h3>📢 Marketing</h3>
+      <p>Impulsamos tu visibilidad en las principales plataformas para atraer más tráfico y aumentar tus ingresos de forma constante.</p>
+    </div>
 
-    <h3>Soporte técnico</h3>
-    <p>Asistencia continua para transmisiones sin fallas.</p>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581090700227-1e8a6c9f7f4c" alt="">
+      <h3>🛠️ Soporte técnico</h3>
+      <p>Te brindamos asistencia continua para que transmitas sin problemas y aproveches al máximo todas las herramientas.</p>
+    </div>
 
-    <h3>Gestión de cuentas</h3>
-    <p>Optimizamos tu perfil y rendimiento.</p>
-  </section>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
+      <h3>📊 Gestión de cuentas</h3>
+      <p>Optimizamos tu perfil, horarios y estrategias para mejorar tu rendimiento y maximizar tus ganancias.</p>
+    </div>
 
-  <!-- FOOTER -->
-  <footer style="background:black; color:white; padding:20px;">
-    <p>ACT MEDIA - Agencia profesional</p>
-  </footer>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact">
+  <h2>Contacto</h2>
+  <p>Escríbenos y empieza hoy mismo</p>
+
+  <a href="https://wa.me/573004885019" target="_blank">
+    <button>Contactar por WhatsApp</button>
+  </a>
+
+  <p style="margin-top:20px;">
+    📧 act.contacto.bta@gmail.com
+  </p>
+
+  <div style="margin-top:10px;">
+    <a href="#">Instagram</a>
+    <a href="#">TikTok</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 ACT MEDIA - Todos los derechos reservados</p>
+</footer>
 
 </body>
 </html>
