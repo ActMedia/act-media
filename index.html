@@ -5,10 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ACT MEDIA</title>
 
-<!-- FUENTES -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
-
-<!-- ICONOS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -31,13 +28,7 @@ header {
 
 header h1 {
   font-size: 60px;
-  margin: 0;
   font-weight: 800;
-}
-
-header p {
-  font-size: 20px;
-  opacity: 0.9;
 }
 
 /* SECCIONES */
@@ -66,7 +57,7 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-12px) scale(1.02);
+  transform: translateY(-12px);
 }
 
 .card img {
@@ -78,7 +69,6 @@ section {
 
 .card h3 {
   margin-top: 15px;
-  font-weight: 600;
 }
 
 /* CONTACTO */
@@ -86,26 +76,33 @@ section {
   background: linear-gradient(135deg, #6600ff, #ff0066);
 }
 
-/* BOTÓN WHATSAPP FLOTANTE */
+/* BOTÓN WHATSAPP PERFECTO */
 .whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  width: 70px;
+  height: 70px;
   background: #25D366;
-  color: white;
-  font-size: 28px;
-  padding: 20px;
   border-radius: 50%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
   z-index: 999;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 /* REDES */
 .socials a {
   font-size: 28px;
   margin: 10px;
-  display: inline-block;
   color: white;
   transition: 0.3s;
 }
@@ -119,7 +116,6 @@ footer {
   background: black;
   padding: 20px;
   text-align: center;
-  font-size: 14px;
 }
 </style>
 
@@ -127,7 +123,6 @@ footer {
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div>
     <h1>ACT MEDIA</h1>
@@ -135,26 +130,25 @@ footer {
   </div>
 </header>
 
-<!-- SERVICIOS -->
 <section class="services">
   <h2>Servicios</h2>
 
   <div class="cards">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1557838923-2985c318be48" alt="">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
       <h3>📢 Marketing</h3>
       <p>Impulsamos tu visibilidad en las principales plataformas para atraer más tráfico y aumentar tus ingresos de forma constante.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581090700227-1e8a6c9f7f4c" alt="">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="">
       <h3>🛠️ Soporte técnico</h3>
       <p>Te brindamos asistencia continua para que transmitas sin problemas y aproveches al máximo todas las herramientas.</p>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="">
+      <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="">
       <h3>📊 Gestión de cuentas</h3>
       <p>Optimizamos tu perfil, horarios y estrategias para mejorar tu rendimiento y maximizar tus ganancias.</p>
     </div>
@@ -162,7 +156,6 @@ footer {
   </div>
 </section>
 
-<!-- CONTACTO -->
 <section class="contact">
   <h2>Contacto</h2>
 
@@ -177,12 +170,10 @@ footer {
   </div>
 </section>
 
-<!-- BOTÓN WHATSAPP -->
 <a href="https://wa.me/573004885019" class="whatsapp" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- FOOTER -->
 <footer>
   <p>📧 act.contacto.bta@gmail.com</p>
   <p>© 2026 ACT MEDIA - Todos los derechos reservados</p>
